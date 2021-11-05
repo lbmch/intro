@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    animation: container 10s alternate infinite;
+}
+
+@keyframes container {
+    0%   {background-color: rgb(0, 0, 0);}
+    25%  {background-color: rgb(90, 0, 63); }
+    50%  {background-color: rgb(57, 73, 0); }
+    75%  {background-color: rgb(0, 66, 68); }
+    100% {background-color: rgb(77, 0, 0);}
+}
+
+h2 {
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+h3 {
+    position: fixed;
+    color: white;
+    font-size: 14px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.first {
+    font-size: 0;
+    color: red;
+    position: fixed;
+    animation: first 5s 1;
+}
+
+@keyframes first {
+    0%   {color: rgb(0, 0, 0); font-size: 1px;}
+    25%  {color: rgb(194, 0, 136); }
+    50%  {color: rgb(200, 255, 0); font-size: 50px; }
+    75%  {color: rgb(0, 247, 255); }
+    100% {color: rgb(255, 0, 0); font-size: 0px;}
+}
+
+.second {
+    font-size: 0;
+    color: red;
+    position: fixed;
+    animation: second 5s 1 5s;
+}
+
+@keyframes second {
+    0%   {color: rgb(255, 197, 197); font-size: 1px;}
+    25%  {color: rgb(216, 51, 51)}
+    50%  {color: rgb(255, 0, 0); font-size: 50px; }
+    75%  {color: rgb(104, 0, 0); }
+    100% {color: rgb(0, 0, 0); font-size: 0px;}
+}
+
+.third {
+    font-size: 0;
+    color: red;
+    position: fixed;
+    animation: third 5s 1 10s;
+}
+
+@keyframes third {
+    0%   {color: rgb(255, 197, 197); font-size: 1px;}
+    25%  {color: rgb(216, 51, 51)}
+    50%  {color: rgb(255, 0, 0); font-size: 50px; }
+    75%  {color: rgb(104, 0, 0); }
+    100% {color: rgb(0, 0, 0); font-size: 0px;}
+}
+
+.fourth {
+    font-size: 0;
+    color: red;
+    position: fixed;
+    animation: fourth 5s 1 15s;
+}
+
+@keyframes fourth {
+    0%   {color: rgb(255, 197, 197); font-size: 1px;}
+    25%  {color: rgb(216, 51, 51)}
+    50%  {color: rgb(255, 0, 0); font-size: 50px; }
+    75%  {color: rgb(104, 0, 0); }
+    100% {color: rgb(0, 0, 0); font-size: 0px;}
+}
+
+.fifth {
+    max-width: 500px;
+    border-radius: 8px;
+    width: 0;
+    position: fixed;
+    animation: fifth 6s 1 20s alternate;
+
+}
+
+@keyframes fifth {
+    form {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+.button {
+    position: fixed;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(110, 0, 110);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    animation: button 26s 1;
+}
+
+
+@keyframes button {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
